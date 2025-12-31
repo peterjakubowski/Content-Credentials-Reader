@@ -32,7 +32,7 @@ By aggregating these creation events, the tool answers the fundamental question:
 1. Clone the repository:
 
     ```commandline
-    git clone [https://github.com/your-username/content-credentials-reader.git](https://github.com/your-username/content-credentials-reader.git)
+    git clone https://github.com/peterjakubowski/Content-Credentials-Reader.git
     cd content-credentials-reader
     ```
 

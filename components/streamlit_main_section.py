@@ -20,11 +20,9 @@ def streamlit_main_section():
         with st.container(border=True, width="stretch"):
             # st.markdown("Validation State")
             if validation_state == "Valid":
-                st.markdown(f"**Validation State**: :green-badge[:material/check: {validation_state}]",
-                            help="Validation state")
+                st.markdown(f"**Validation State**: :green-badge[:material/check: {validation_state}]")
             elif validation_state == "Invalid":
-                st.markdown(f"**Validation State**: :red-badge[:material/block: {validation_state}]",
-                            help="Validation state")
+                st.markdown(f"**Validation State**: :red-badge[:material/block: {validation_state}]")
         with st.container(border=True):
             st.subheader("Signature Info", help="Signature information from active manifest.", anchor=False)
             # st.markdown(f"**alg**: {signature_info.get('alg')}")

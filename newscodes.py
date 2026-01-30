@@ -21,7 +21,7 @@ def download_newscodes_json():
         data = response.json()
         # create the schema directory if it doesn't exist
         os.makedirs("./schema", exist_ok=True)
-        # writte the data to the JSON file
+        # write the data to the JSON file
         with open(NEWSCODES_PATH, 'w') as f:
             json.dump(data, f, indent=4)
 

@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import datetime
 
 
 def streamlit_main_section():
@@ -32,7 +33,8 @@ def streamlit_main_section():
             # st.markdown(f"**alg**: {signature_info.get('alg')}")
             st.markdown(f"**Issuer**: {signature_info.get('issuer')}")
             st.markdown(f"**Name**: {signature_info.get('common_name')}")
-            st.markdown(f"**Date**: {signature_info.get('time')}")
+            date_time = datetime.strptime(signature_info.get('time'), "%Y-%m-%dT%H:%M:%S%z")
+            st.markdown(f"**Date**: {date_time.date().strftime("%b %-d, %Y")}")
     # display the image
     with col1:
         st.image(st.session_state.get('upload'))

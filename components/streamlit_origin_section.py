@@ -18,7 +18,8 @@ def streamlit_origin_section():
     # summarize the origin information
     origin_summary = summarize_origin_info(origin)
     df = pd.DataFrame(origin)
-    df['digitalSourceType'] = df['digitalSourceType'].map(NEWS_CODES_MAP)
+    if 'digitalSourceType' in df.columns:
+        df['digitalSourceType'] = df['digitalSourceType'].map(NEWS_CODES_MAP)
 
     # ORIGIN SECTION - 1 COLUMN
     with st.container(border=True):

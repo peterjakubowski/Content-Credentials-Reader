@@ -7,6 +7,8 @@ def app():
 
     st.title("Content Credentials Reader")
 
+    st.write("Upload an image to summarize its content credentials.")
+
     file = st.file_uploader(
         label="upload",
         label_visibility="hidden",

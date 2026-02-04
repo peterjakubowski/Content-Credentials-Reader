@@ -33,4 +33,4 @@ def streamlit_metrics_section():
                        manifests.items()]),
                   border=True,
                   help="An operation that an actor performs on an asset. "
-                       """For example, "create," "embed," or "change contrast.""""")
+                       """For example, created, edited, opened, or converted.""")

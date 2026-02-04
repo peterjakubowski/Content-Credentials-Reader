@@ -18,6 +18,7 @@ def load_trust_anchors():
             anchors = response.read().decode('utf-8')
         settings = {
             "verify": {
+                "verify_trust": False,
                 "verify_cert_anchors": True
             },
             "trust": {

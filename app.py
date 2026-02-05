@@ -7,7 +7,7 @@ def app():
 
     st.title("Content Credentials Reader")
 
-    st.write("Upload an image to summarize its content credentials.")
+    st.write("Upload an image to summarize its Content Credentials.")
 
     file = st.file_uploader(
         label="upload",
@@ -20,6 +20,7 @@ def app():
     if file:
         if read_content_credentials(file):
             streamlit_workflow()
+
 
 # Run the app
 app()
